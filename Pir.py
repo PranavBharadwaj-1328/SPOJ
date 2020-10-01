@@ -2,22 +2,22 @@ from math import *
 
 def tetra():
   n = int(input())
-  n1 = []
-  n2 = []
-  n3 = []
-  n4 = []
-  n5 = []
-  n6 = []
+  name_1 = []
+  name_2 = []
+  name_3 = []
+  name_4 = []
+  name_5 = []
+  name_6 = []
   for i in range(n):
     x1,x2,x3,x4,x5,x6=input().split()
-    n1.append(int(x1))
-    n2.append(int(x2))
-    n3.append(int(x3))
-    n4.append(int(x4))
-    n5.append(int(x5))
-    n6.append(int(x6))
+    name_1.append(int(x1))
+    name_2.append(int(x2))
+    name_3.append(int(x3))
+    name_4.append(int(x4))
+    name_5.append(int(x5))
+    name_6.append(int(x6))
   for i in range(n):
-    print(findVolume(n6[i],n3[i],n5[i],n1[i],n4[i],n2[i],12))
+    print(findVolume(name_6[i],name_3[i],name_5[i],name_1[i],name_4[i],name_2[i],12))
 
 def findVolume(u, v, w, U, V, W, b) :
   uPow = u**2
